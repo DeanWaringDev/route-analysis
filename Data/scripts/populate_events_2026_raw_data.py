@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-Populate Parkruns.xlsx with data from enhanced GPX files
+Populate Events_2026.xlsx with data from enhanced GPX files
 
-This script extracts data from enhanced parkrun GPX files and updates the
-Parkruns.xlsx spreadsheet with:
+This script extracts data from enhanced 2026 event GPX files and updates the
+Events_2026.xlsx spreadsheet with:
 - region (from postcode)
 - start_lat, start_lon, finish_lat, finish_lon (from GPX)
-- power_of_10 = True
+- route_source = "Enhanced" (if currently "Event")
 - gpx_available = True  
-- route_source = "Enhanced"
 - gpx_point_count (points with elevation)
 - gpx_resolution_class (low/medium/high based on point count)
-- analysis_ready = False
+
+Does NOT overwrite existing data except for route_source, gpx_point_count, and gpx_resolution_class
 """
 
 import os
@@ -19,37 +19,6 @@ import pandas as pd
 import gpxpy
 import re
 import argparse
-
-def slugify_event_name(text):
-    """
-    Convert event name to safe filename component
-    
-    Args:
-        text (str): Event name like "King's Lynn" or "Market Harborough"
-        
-    Returns:
-        str: Slugified name like "kingslynn" or "marketharborough"
-    """
-    if not text or pd.isna(text):
-        return "unknown"
-    
-    # Convert to lowercase and handle special cases
-    slug = str(text).lower()
-    
-    # Replace common variations
-    slug = slug.replace("st.", "st")
-    slug = slug.replace("&", "and")
-    
-    # Keep only alphanumeric characters, replace everything else with underscore
-    slug = re.sub(r'[^a-z0-9]', '_', slug)
-    
-    # Collapse multiple underscores
-    slug = re.sub(r'_+', '_', slug)
-    
-    # Remove leading/trailing underscores
-    slug = slug.strip('_')
-    
-    return slug
 
 def extract_region_from_postcode(postcode):
     """
@@ -133,7 +102,7 @@ def extract_gpx_data(gpx_file_path):
         # Count points with elevation
         points_with_elevation = sum(1 for point in all_points if point.elevation is not None)
         
-        # Determine resolution class
+        # Determine resolution class (same logic as parkruns)
         if points_with_elevation < 400:
             resolution_class = "low"
         elif points_with_elevation <= 599:
@@ -154,21 +123,21 @@ def extract_gpx_data(gpx_file_path):
         print(f"Error processing {gpx_file_path}: {e}")
         return None
 
-def populate_parkrun_data(force_update=False):
+def populate_events_2026_data(force_update=False):
     """
-    Main function to populate the Parkruns.xlsx file
+    Main function to populate the Events_2026.xlsx file
     
     Args:
         force_update (bool): If True, overwrite existing data. If False, only fill missing data.
     """
     # File paths
-    excel_path = os.path.join('..', 'Raw_Data', 'Parkruns.xlsx')
-    enhanced_gpx_dir = os.path.join('..', 'GPX', 'Parkrun_ENH')
+    excel_path = os.path.join('..', 'Raw_Data', 'Events_2026.xlsx')
+    enhanced_gpx_dir = os.path.join('..', 'GPX', 'Events_2026_ENH')
     
-    print(f"🔄 Loading Parkruns.xlsx... (force_update={force_update})")
+    print(f"🔄 Loading Events_2026.xlsx... (force_update={force_update})")
     try:
         df = pd.read_excel(excel_path)
-        print(f"📊 Found {len(df)} parkrun records")
+        print(f"📊 Found {len(df)} event records")
     except Exception as e:
         print(f"❌ Error loading Excel file: {e}")
         return
@@ -180,7 +149,7 @@ def populate_parkrun_data(force_update=False):
     for index, row in df.iterrows():
         event_id = row['event_id']
         event_name = row['event_name']
-        postcode = row['event_postcode']
+        postcode = row['event_postcode'] if 'event_postcode' in row else None
         
         # Skip rows with missing data
         if pd.isna(event_id) or pd.isna(event_name):
@@ -190,19 +159,15 @@ def populate_parkrun_data(force_update=False):
         print(f"\n🏃 Processing {event_id} - {event_name}")
         
         # Update region from postcode (only if missing or force)
-        if force_update or pd.isna(row['region']) or not row['region']:
+        if postcode and (force_update or pd.isna(row.get('region')) or not row.get('region')):
             region = extract_region_from_postcode(postcode)
             df.at[index, 'region'] = region
             print(f"  📍 Region: {postcode} → {region}")
         
-        # Look for corresponding enhanced GPX file using robust slugify
-        name_slug = slugify_event_name(event_name)
-        
-        # Try multiple filename patterns
+        # Look for corresponding enhanced GPX file by event_id
         potential_filenames = [
-            f"{event_id}_{name_slug}_ENH.gpx",  # Full name
-            f"{event_id}_ENH.gpx",              # ID only
-            f'{event_id}_{event_name.lower().replace(" ", "").replace("\'", "")}_ENH.gpx'  # Fallback to old method
+            f"{event_id}_ENH.gpx",  # Standard pattern
+            f"{event_id}_enhanced.gpx"  # Alternative pattern
         ]
         
         gpx_path = None
@@ -211,55 +176,79 @@ def populate_parkrun_data(force_update=False):
         for filename in potential_filenames:
             test_path = os.path.join(enhanced_gpx_dir, filename)
             if os.path.exists(test_path):
-                gpx_path = test_path
-                gpx_filename = filename
-                break
+                # Check if it matches our event_id pattern (starts with the event_id)
+                if filename.startswith(str(event_id)):
+                    gpx_path = test_path
+                    gpx_filename = filename
+                    break
+        
+        # Also check for files that start with event_id and contain event name
+        if not gpx_path:
+            for filename in os.listdir(enhanced_gpx_dir):
+                if (filename.lower().endswith('_enh.gpx') and 
+                    filename.startswith(str(event_id))):
+                    gpx_path = os.path.join(enhanced_gpx_dir, filename)
+                    gpx_filename = filename
+                    break
         
         if gpx_path:
             print(f"  📄 Found enhanced GPX: {gpx_filename}")
             
-            # Check if we should update (force or missing data)
-            should_update = force_update or pd.isna(row['start_lat']) or pd.isna(row['route_source']) or row['route_source'] != 'Enhanced'
+            # Check if we should update coordinates (force or missing data)
+            should_update_coords = force_update or pd.isna(row.get('start_lat'))
             
-            if should_update:
+            # Always update route_source, gpx_point_count, gpx_resolution_class
+            should_update_gpx_meta = True
+            
+            if should_update_coords or should_update_gpx_meta:
                 # Extract GPX data
                 gpx_data = extract_gpx_data(gpx_path)
                 
                 if gpx_data:
-                    # Update coordinates
-                    df.at[index, 'start_lat'] = float(gpx_data['start_lat'])
-                    df.at[index, 'start_lon'] = float(gpx_data['start_lon'])
-                    df.at[index, 'finish_lat'] = float(gpx_data['finish_lat'])
-                    df.at[index, 'finish_lon'] = float(gpx_data['finish_lon'])
+                    # Update coordinates (only if force or missing)
+                    if should_update_coords:
+                        df.at[index, 'start_lat'] = float(gpx_data['start_lat'])
+                        df.at[index, 'start_lon'] = float(gpx_data['start_lon'])
+                        df.at[index, 'finish_lat'] = float(gpx_data['finish_lat'])
+                        df.at[index, 'finish_lon'] = float(gpx_data['finish_lon'])
+                        print(f"      📍 Coordinates updated")
+                        print(f"      Start: {gpx_data['start_lat']:.6f}, {gpx_data['start_lon']:.6f}")
+                        print(f"      Finish: {gpx_data['finish_lat']:.6f}, {gpx_data['finish_lon']:.6f}")
                     
-                    # Update GPX metadata
-                    df.at[index, 'power_of_10'] = 1  # Use 1 instead of True for Excel compatibility
+                    # Always update GPX metadata
                     df.at[index, 'gpx_available'] = 1  # Use 1 instead of True for Excel compatibility
-                    df.at[index, 'route_source'] = "Enhanced"
                     df.at[index, 'gpx_point_count'] = int(gpx_data['gpx_point_count'])
                     df.at[index, 'gpx_resolution_class'] = gpx_data['gpx_resolution_class']
-                    # Don't automatically reset analysis_ready - preserve existing progress
+                    
+                    # Update route_source if currently "Event"
+                    current_route_source = row.get('route_source', '')
+                    if current_route_source == 'Event' or pd.isna(current_route_source):
+                        df.at[index, 'route_source'] = "Enhanced"
+                        print(f"      📂 Route source: {current_route_source} → Enhanced")
                     
                     print(f"  ✅ Updated: {gpx_data['gpx_point_count']} points ({gpx_data['gpx_resolution_class']} resolution)")
-                    print(f"      Start: {gpx_data['start_lat']:.6f}, {gpx_data['start_lon']:.6f}")
-                    print(f"      Finish: {gpx_data['finish_lat']:.6f}, {gpx_data['finish_lon']:.6f}")
                     
                     updates_made += 1
                 else:
                     print(f"  ❌ Failed to extract data from GPX")
             else:
-                print(f"  ⏭️  Data already exists (use --force to overwrite)")
+                print(f"  ⏭️  Data already exists (use --force to overwrite coordinates)")
         else:
             print(f"  ⚠️  No enhanced GPX found. Tried:")
             for filename in potential_filenames:
                 print(f"      - {filename}")
+            # Also check what files are actually there
+            if os.path.exists(enhanced_gpx_dir):
+                actual_files = [f for f in os.listdir(enhanced_gpx_dir) if f.startswith(str(event_id))]
+                if actual_files:
+                    print(f"      Available files starting with {event_id}: {actual_files}")
     
     # Save updated Excel file
     if updates_made > 0:
         print(f"\n💾 Saving updated Excel file...")
         try:
             df.to_excel(excel_path, index=False)
-            print(f"✅ Successfully updated {updates_made} parkrun records")
+            print(f"✅ Successfully updated {updates_made} event records")
             print(f"📄 File saved: {excel_path}")
         except PermissionError:
             print(f"❌ Permission denied: Cannot save to {excel_path}")
@@ -270,14 +259,14 @@ def populate_parkrun_data(force_update=False):
         print(f"\n⚠️  No updates made to Excel file")
     
     print(f"\n📊 Summary:")
-    print(f"  Total parkruns: {len(df)}")
+    print(f"  Total events: {len(df)}")
     print(f"  Updated records: {updates_made}")
     print(f"  Enhanced GPX files processed: {updates_made}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Populate Parkruns.xlsx with enhanced GPX data')
+    parser = argparse.ArgumentParser(description='Populate Events_2026.xlsx with enhanced GPX data')
     parser.add_argument('--force', action='store_true', 
-                       help='Force update existing data (default: only fill missing data)')
+                       help='Force update existing coordinate data (default: only fill missing coordinates, always update GPX metadata)')
     
     args = parser.parse_args()
-    populate_parkrun_data(force_update=args.force)
+    populate_events_2026_data(force_update=args.force)
