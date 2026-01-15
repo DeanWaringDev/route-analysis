@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Garmin Connect" version="1.1"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/11.xsd"
+  xmlns:ns3="http://www.garmin.com/xmlschemas/TrackPointExtension/v1"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+  <metadata>
+    <name>park run kings lynn</name>
+    <link href="connect.garmin.com">
+      <text>Garmin Connect</text>
+    </link>
+    <time>2014-09-06T11:38:01.000Z</time>
+  </metadata>
+  <trk>
+    <name>park run kings lynn</name>
+    <trkseg>
+      <trkpt lat="52.75271133519709" lon="0.40905204601585865">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.7529439330101" lon="0.4048849828541279">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.7526606246829" lon="0.4047766048461199">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.751707853749394" lon="0.40573708713054657">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.750832783058286" lon="0.4055559542030096">
+        <ele>8.0</ele>
+      </trkpt>
+      <trkpt lat="52.75090863928199" lon="0.40114942006766796">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.75080353021622" lon="0.40685540065169334">
+        <ele>5.0</ele>
+      </trkpt>
+      <trkpt lat="52.75263950228691" lon="0.40954004041850567">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.75290688499808" lon="0.40493275970220566">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.752843936905265" lon="0.4047631099820137">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.75256523862481" lon="0.40482555516064167">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.75177306495607" lon="0.40567606687545776">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.75083311833441" lon="0.40551320649683475">
+        <ele>8.0</ele>
+      </trkpt>
+      <trkpt lat="52.75090394541621" lon="0.40112653747200966">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.750794645398855" lon="0.40690770372748375">
+        <ele>5.0</ele>
+      </trkpt>
+      <trkpt lat="52.75259449146688" lon="0.40954272262752056">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.75289598852396" lon="0.404818682000041">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.75278249755502" lon="0.40470066480338573">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.752567334100604" lon="0.4047740064561367">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.751741632819176" lon="0.40563449263572693">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.75086874142289" lon="0.40549946017563343">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.7507683262229" lon="0.40411870926618576">
+        <ele>8.0</ele>
+      </trkpt>
+      <trkpt lat="52.75090679526329" lon="0.4010761622339487">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.750777043402195" lon="0.4068703204393387">
+        <ele>5.0</ele>
+      </trkpt>
+      <trkpt lat="52.752649979665875" lon="0.4095362685620785">
+        <ele>7.0</ele>
+      </trkpt>
+      <trkpt lat="52.752834716811776" lon="0.40638232603669167">
+        <ele>8.0</ele>
+      </trkpt>
+      <trkpt lat="52.75273371487856" lon="0.4061876982450485">
+        <ele>8.0</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

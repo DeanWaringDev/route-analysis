@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Route Analysis Project">
+  <metadata>
+    <name>Corby Parkrun Route</name>
+    <desc>Route data for Corby parkrun</desc>
+  </metadata>
+  <trk>
+    <name>Corby Route</name>
+    <trkseg>
+      <trkpt lat="52.491804" lon="-0.69595">
+      </trkpt>
+      <trkpt lat="52.492101" lon="-0.695542">
+      </trkpt>
+      <trkpt lat="52.49215" lon="-0.695429">
+      </trkpt>
+      <trkpt lat="52.492464" lon="-0.695386">
+      </trkpt>
+      <trkpt lat="52.492875" lon="-0.694979">
+      </trkpt>
+      <trkpt lat="52.493137" lon="-0.694571">
+      </trkpt>
+      <trkpt lat="52.49364" lon="-0.692951">
+      </trkpt>
+      <trkpt lat="52.493999" lon="-0.691148">
+      </trkpt>
+      <trkpt lat="52.494371" lon="-0.690097">
+      </trkpt>
+      <trkpt lat="52.494613" lon="-0.690322">
+      </trkpt>
+      <trkpt lat="52.494502" lon="-0.691384">
+      </trkpt>
+      <trkpt lat="52.494456" lon="-0.692125">
+      </trkpt>
+      <trkpt lat="52.494593" lon="-0.692414">
+      </trkpt>
+      <trkpt lat="52.494894" lon="-0.692768">
+      </trkpt>
+      <trkpt lat="52.49477" lon="-0.69338">
+      </trkpt>
+      <trkpt lat="52.494391" lon="-0.69426">
+      </trkpt>
+      <trkpt lat="52.493712" lon="-0.695172">
+      </trkpt>
+      <trkpt lat="52.49283" lon="-0.696416">
+      </trkpt>
+      <trkpt lat="52.492568" lon="-0.696899">
+      </trkpt>
+      <trkpt lat="52.492157" lon="-0.69677">
+      </trkpt>
+      <trkpt lat="52.491713" lon="-0.696352">
+      </trkpt>
+      <trkpt lat="52.491693" lon="-0.696127">
+      </trkpt>
+      <trkpt lat="52.491752" lon="-0.695976">
+      </trkpt>
+      <trkpt lat="52.491784" lon="-0.69514">
+      </trkpt>
+      <trkpt lat="52.492052" lon="-0.695182">
+      </trkpt>
+      <trkpt lat="52.492163" lon="-0.694635">
+      </trkpt>
+      <trkpt lat="52.49217" lon="-0.693777">
+      </trkpt>
+      <trkpt lat="52.492209" lon="-0.691106">
+      </trkpt>
+      <trkpt lat="52.491889" lon="-0.688477">
+      </trkpt>
+      <trkpt lat="52.492176" lon="-0.688359">
+      </trkpt>
+      <trkpt lat="52.492229" lon="-0.688606">
+      </trkpt>
+      <trkpt lat="52.492875" lon="-0.68867">
+      </trkpt>
+      <trkpt lat="52.493561" lon="-0.688509">
+      </trkpt>
+      <trkpt lat="52.493653" lon="-0.687157">
+      </trkpt>
+      <trkpt lat="52.494156" lon="-0.687511">
+      </trkpt>
+      <trkpt lat="52.494463" lon="-0.688541">
+      </trkpt>
+      <trkpt lat="52.49426" lon="-0.689979">
+      </trkpt>
+      <trkpt lat="52.494365" lon="-0.690097">
+      </trkpt>
+      <trkpt lat="52.492101" lon="-0.695542">
+      </trkpt>
+      <trkpt lat="52.49198" lon="-0.69573">
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Garmin Connect" version="1.1"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/11.xsd"
+  xmlns:ns3="http://www.garmin.com/xmlschemas/TrackPointExtension/v1"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+  <metadata>
+    <name>Kings lynn Parkrun</name>
+    <link href="connect.garmin.com">
+      <text>Garmin Connect</text>
+    </link>
+    <time>2013-12-21T11:51:02.000Z</time>
+  </metadata>
+  <trk>
+    <name>Kings lynn Parkrun</name>
+    <trkseg>
+      <trkpt lat="52.752414867281914" lon="0.4092773515731096">
+        <ele>7.95</ele>
+      </trkpt>
+      <trkpt lat="52.75268258526921" lon="0.4096013121306896">
+        <ele>7.59</ele>
+      </trkpt>
+      <trkpt lat="52.75299179367721" lon="0.40488095954060555">
+        <ele>6.15</ele>
+      </trkpt>
+      <trkpt lat="52.75289347395301" lon="0.4047000780701637">
+        <ele>5.84</ele>
+      </trkpt>
+      <trkpt lat="52.752694403752685" lon="0.4047066159546375">
+        <ele>6.03</ele>
+      </trkpt>
+      <trkpt lat="52.75196526199579" lon="0.40558889508247375">
+        <ele>7.82</ele>
+      </trkpt>
+      <trkpt lat="52.7516299020499" lon="0.4057297110557556">
+        <ele>6.22</ele>
+      </trkpt>
+      <trkpt lat="52.75091056711972" lon="0.40557305328547955">
+        <ele>7.06</ele>
+      </trkpt>
+      <trkpt lat="52.750822557136416" lon="0.40541069582104683">
+        <ele>7.99</ele>
+      </trkpt>
+      <trkpt lat="52.75097259320319" lon="0.4009698797017336">
+        <ele>6.59</ele>
+      </trkpt>
+      <trkpt lat="52.750790202990174" lon="0.40703904815018177">
+        <ele>4.56</ele>
+      </trkpt>
+      <trkpt lat="52.752665570005774" lon="0.4096307326108217">
+        <ele>7.65</ele>
+      </trkpt>
+      <trkpt lat="52.752979807555676" lon="0.4047801252454519">
+        <ele>5.83</ele>
+      </trkpt>
+      <trkpt lat="52.75290663354099" lon="0.40465439669787884">
+        <ele>5.63</ele>
+      </trkpt>
+      <trkpt lat="52.7526384126395" lon="0.40474366396665573">
+        <ele>6.17</ele>
+      </trkpt>
+      <trkpt lat="52.751740626990795" lon="0.40571252815425396">
+        <ele>7.01</ele>
+      </trkpt>
+      <trkpt lat="52.75083831511438" lon="0.40551857091486454">
+        <ele>7.87</ele>
+      </trkpt>
+      <trkpt lat="52.751021292060614" lon="0.4010526929050684">
+        <ele>6.88</ele>
+      </trkpt>
+      <trkpt lat="52.750757429748774" lon="0.406928239390254">
+        <ele>4.96</ele>
+      </trkpt>
+      <trkpt lat="52.75263707153499" lon="0.4096136335283518">
+        <ele>7.76</ele>
+      </trkpt>
+      <trkpt lat="52.75283681228757" lon="0.4082960821688175">
+        <ele>6.03</ele>
+      </trkpt>
+      <trkpt lat="52.75296924635768" lon="0.40484885685145855">
+        <ele>6.11</ele>
+      </trkpt>
+      <trkpt lat="52.75286958552897" lon="0.4046971444040537">
+        <ele>5.93</ele>
+      </trkpt>
+      <trkpt lat="52.75261511094868" lon="0.40480426512658596">
+        <ele>6.16</ele>
+      </trkpt>
+      <trkpt lat="52.751812962815166" lon="0.4057055711746216">
+        <ele>7.27</ele>
+      </trkpt>
+      <trkpt lat="52.7508959826082" lon="0.4055777471512556">
+        <ele>7.26</ele>
+      </trkpt>
+      <trkpt lat="52.75110913440585" lon="0.40228315629065037">
+        <ele>8.25</ele>
+      </trkpt>
+      <trkpt lat="52.7510289195925" lon="0.4009966179728508">
+        <ele>6.68</ele>
+      </trkpt>
+      <trkpt lat="52.75077419355512" lon="0.4069982282817364">
+        <ele>4.71</ele>
+      </trkpt>
+      <trkpt lat="52.75266716256738" lon="0.4096304811537266">
+        <ele>7.65</ele>
+      </trkpt>
+      <trkpt lat="52.7528474573046" lon="0.40794236585497856">
+        <ele>6.0</ele>
+      </trkpt>
+      <trkpt lat="52.75250354781747" lon="0.4073763359338045">
+        <ele>4.75</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Route Analysis Project">
+  <metadata>
+    <name>King's Lynn Parkrun Route</name>
+    <desc>Route data for King's Lynn parkrun</desc>
+  </metadata>
+  <trk>
+    <name>King's Lynn Route</name>
+    <trkseg>
+      <trkpt lat="52.75274" lon="0.407967">
+      </trkpt>
+      <trkpt lat="52.752862" lon="0.40584">
+      </trkpt>
+      <trkpt lat="52.752927" lon="0.404826">
+      </trkpt>
+      <trkpt lat="52.752821" lon="0.404584">
+      </trkpt>
+      <trkpt lat="52.75268" lon="0.404603">
+      </trkpt>
+      <trkpt lat="52.752571" lon="0.404635">
+      </trkpt>
+      <trkpt lat="52.752417" lon="0.404812">
+      </trkpt>
+      <trkpt lat="52.752125" lon="0.405217">
+      </trkpt>
+      <trkpt lat="52.751948" lon="0.405456">
+      </trkpt>
+      <trkpt lat="52.751834" lon="0.405582">
+      </trkpt>
+      <trkpt lat="52.751605" lon="0.405689">
+      </trkpt>
+      <trkpt lat="52.751355" lon="0.405596">
+      </trkpt>
+      <trkpt lat="52.750886" lon="0.405539">
+      </trkpt>
+      <trkpt lat="52.750771" lon="0.405475">
+      </trkpt>
+      <trkpt lat="52.750743" lon="0.405169">
+      </trkpt>
+      <trkpt lat="52.750758" lon="0.404364">
+      </trkpt>
+      <trkpt lat="52.750857" lon="0.402337">
+      </trkpt>
+      <trkpt lat="52.75091" lon="0.401103">
+      </trkpt>
+      <trkpt lat="52.750928" lon="0.400971">
+      </trkpt>
+      <trkpt lat="52.750904" lon="0.400969">
+      </trkpt>
+      <trkpt lat="52.750815" lon="0.402766">
+      </trkpt>
+      <trkpt lat="52.750733" lon="0.404582">
+      </trkpt>
+      <trkpt lat="52.750706" lon="0.405311">
+      </trkpt>
+      <trkpt lat="52.750717" lon="0.405614">
+      </trkpt>
+      <trkpt lat="52.750727" lon="0.405891">
+      </trkpt>
+      <trkpt lat="52.750733" lon="0.406001">
+      </trkpt>
+      <trkpt lat="52.750724" lon="0.406175">
+      </trkpt>
+      <trkpt lat="52.750719" lon="0.406328">
+      </trkpt>
+      <trkpt lat="52.750703" lon="0.406612">
+      </trkpt>
+      <trkpt lat="52.750703" lon="0.40699">
+      </trkpt>
+      <trkpt lat="52.750966" lon="0.40736">
+      </trkpt>
+      <trkpt lat="52.751156" lon="0.407626">
+      </trkpt>
+      <trkpt lat="52.75137" lon="0.4079">
+      </trkpt>
+      <trkpt lat="52.751667" lon="0.408321">
+      </trkpt>
+      <trkpt lat="52.751923" lon="0.408699">
+      </trkpt>
+      <trkpt lat="52.752183" lon="0.409034">
+      </trkpt>
+      <trkpt lat="52.752638" lon="0.40971">
+      </trkpt>
+      <trkpt lat="52.752737" lon="0.407983">
+      </trkpt>
+      <trkpt lat="52.752743" lon="0.407967">
+      </trkpt>
+      <trkpt lat="52.752841" lon="0.406188">
+      </trkpt>
+      <trkpt lat="52.752716" lon="0.405858">
+      </trkpt>
+      <trkpt lat="52.752716" lon="0.405858">
+      </trkpt>
+      <trkpt lat="52.752503" lon="0.40614">
+      </trkpt>
+      <trkpt lat="52.75251" lon="0.406526">
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

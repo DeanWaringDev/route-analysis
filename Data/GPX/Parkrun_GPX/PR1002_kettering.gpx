@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Route Analysis Project">
+  <metadata>
+    <name>Kettering Parkrun Route</name>
+    <desc>Route data for Kettering parkrun</desc>
+  </metadata>
+  <trk>
+    <name>Kettering Route</name>
+    <trkseg>
+      <trkpt lat="52.384192" lon="-0.710721">
+      </trkpt>
+      <trkpt lat="52.381795" lon="-0.707867">
+      </trkpt>
+      <trkpt lat="52.381795" lon="-0.707867">
+      </trkpt>
+      <trkpt lat="52.381585" lon="-0.709852">
+      </trkpt>
+      <trkpt lat="52.382686" lon="-0.712524">
+      </trkpt>
+      <trkpt lat="52.383825" lon="-0.711064">
+      </trkpt>
+      <trkpt lat="52.384467" lon="-0.710399">
+      </trkpt>
+      <trkpt lat="52.384676" lon="-0.709326">
+      </trkpt>
+      <trkpt lat="52.385311" lon="-0.708704">
+      </trkpt>
+      <trkpt lat="52.384768" lon="-0.707481">
+      </trkpt>
+      <trkpt lat="52.384336" lon="-0.705249">
+      </trkpt>
+      <trkpt lat="52.383759" lon="-0.70349">
+      </trkpt>
+      <trkpt lat="52.38334" lon="-0.70334">
+      </trkpt>
+      <trkpt lat="52.382869" lon="-0.704134">
+      </trkpt>
+      <trkpt lat="52.382607" lon="-0.70482">
+      </trkpt>
+      <trkpt lat="52.380616" lon="-0.70555">
+      </trkpt>
+      <trkpt lat="52.380426" lon="-0.705636">
+      </trkpt>
+      <trkpt lat="52.379882" lon="-0.705464">
+      </trkpt>
+      <trkpt lat="52.3785599" lon="-0.7047607">
+      </trkpt>
+      <trkpt lat="52.3784138" lon="-0.7048025">
+      </trkpt>
+      <trkpt lat="52.3783179" lon="-0.7049092">
+      </trkpt>
+      <trkpt lat="52.3782289" lon="-0.7051128">
+      </trkpt>
+      <trkpt lat="52.3782221" lon="-0.7052763">
+      </trkpt>
+      <trkpt lat="52.3782744" lon="-0.7055029">
+      </trkpt>
+      <trkpt lat="52.3782972" lon="-0.7056973">
+      </trkpt>
+      <trkpt lat="52.3783096" lon="-0.7060812">
+      </trkpt>
+      <trkpt lat="52.3783043" lon="-0.7067563">
+      </trkpt>
+      <trkpt lat="52.378416" lon="-0.707288">
+      </trkpt>
+      <trkpt lat="52.378697" lon="-0.708028">
+      </trkpt>
+      <trkpt lat="52.379031" lon="-0.708543">
+      </trkpt>
+      <trkpt lat="52.37928" lon="-0.708715">
+      </trkpt>
+      <trkpt lat="52.379955" lon="-0.708715">
+      </trkpt>
+      <trkpt lat="52.380819" lon="-0.70864">
+      </trkpt>
+      <trkpt lat="52.381271" lon="-0.708446">
+      </trkpt>
+      <trkpt lat="52.381179" lon="-0.708983">
+      </trkpt>
+      <trkpt lat="52.381585" lon="-0.709852">
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

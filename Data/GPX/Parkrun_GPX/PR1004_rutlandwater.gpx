@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Route Analysis Project">
+  <metadata>
+    <name>Rutland Water Parkrun Route</name>
+    <desc>Route data for Rutland Water parkrun</desc>
+  </metadata>
+  <trk>
+    <name>Rutland Water Route</name>
+    <trkseg>
+      <trkpt lat="52.645772" lon="-0.621414">
+      </trkpt>
+      <trkpt lat="52.646631" lon="-0.620706">
+      </trkpt>
+      <trkpt lat="52.647308" lon="-0.620256">
+      </trkpt>
+      <trkpt lat="52.647946" lon="-0.619783">
+      </trkpt>
+      <trkpt lat="52.648662" lon="-0.61899">
+      </trkpt>
+      <trkpt lat="52.649313" lon="-0.617917">
+      </trkpt>
+      <trkpt lat="52.650692" lon="-0.615985">
+      </trkpt>
+      <trkpt lat="52.651005" lon="-0.615063">
+      </trkpt>
+      <trkpt lat="52.651617" lon="-0.614097">
+      </trkpt>
+      <trkpt lat="52.652229" lon="-0.613003">
+      </trkpt>
+      <trkpt lat="52.652736" lon="-0.611823">
+      </trkpt>
+      <trkpt lat="52.653921" lon="-0.608754">
+      </trkpt>
+      <trkpt lat="52.654285" lon="-0.607445">
+      </trkpt>
+      <trkpt lat="52.654598" lon="-0.605342">
+      </trkpt>
+      <trkpt lat="52.655066" lon="-0.604076">
+      </trkpt>
+      <trkpt lat="52.655522" lon="-0.603454">
+      </trkpt>
+      <trkpt lat="52.655925" lon="-0.603197">
+      </trkpt>
+      <trkpt lat="52.661522" lon="-0.609698">
+      </trkpt>
+      <trkpt lat="52.656016" lon="-0.603132">
+      </trkpt>
+      <trkpt lat="52.655769" lon="-0.603132">
+      </trkpt>
+      <trkpt lat="52.655405" lon="-0.603454">
+      </trkpt>
+      <trkpt lat="52.655118" lon="-0.603754">
+      </trkpt>
+      <trkpt lat="52.654858" lon="-0.604441">
+      </trkpt>
+      <trkpt lat="52.65452" lon="-0.605407">
+      </trkpt>
+      <trkpt lat="52.654337" lon="-0.606737">
+      </trkpt>
+      <trkpt lat="52.654194" lon="-0.607595">
+      </trkpt>
+      <trkpt lat="52.652749" lon="-0.611544">
+      </trkpt>
+      <trkpt lat="52.651643" lon="-0.61384">
+      </trkpt>
+      <trkpt lat="52.650849" lon="-0.615234">
+      </trkpt>
+      <trkpt lat="52.650562" lon="-0.615985">
+      </trkpt>
+      <trkpt lat="52.648688" lon="-0.618818">
+      </trkpt>
+      <trkpt lat="52.648076" lon="-0.619569">
+      </trkpt>
+      <trkpt lat="52.647269" lon="-0.620127">
+      </trkpt>
+      <trkpt lat="52.645667" lon="-0.621114">
+      </trkpt>
+      <trkpt lat="52.645667" lon="-0.621114">
+      </trkpt>
+      <trkpt lat="52.645772" lon="-0.621414">
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
